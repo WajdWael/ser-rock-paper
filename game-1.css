@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #24272e;
+  font-family: Asap, sans-serif;
+}
+header {
+  background-color: #fff;
+  padding: 1.25rem;
+}
+/* == JS CLASSES == */
+.green-glow {
+  border: 2px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+.red-glow {
+  border: 2px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+.gray-glow {
+  border: 2px solid #b66b2e;
+  box-shadow: 0 0 10px #bd641b;
+}
+header > h1 {
+  color: #24272e;
+  text-align: center;
+}
+.score-board {
+  margin: 1.25rem auto;
+  padding: 1rem 1.25rem;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  width: 200px;
+  color: #fff;
+  font-size: 2.125rem;
+  text-align: center;
+  position: relative;
+}
+.badge {
+  background-color: #e25840;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+#user-label {
+  position: absolute;
+  top: 1.875rem;
+  left: -1.563rem;
+}
+#computer-label {
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
+.result {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.result > p {
+  font-weight: bold;
+  text-align: center;
+}
+.choices {
+  text-align: center;
+  margin: 3.125rem 0;
+}
+
+.choice {
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0.625rem; /* 10px == 0.625rem --- 20px == 1.25rem*/
+  margin: 0 1.25rem;
+  transition: 0.4s;
+}
+.choice:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.choice img {
+  width: 125px;
+}
+#action-message {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
